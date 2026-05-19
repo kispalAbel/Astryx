@@ -1,0 +1,1 @@
+location = "Dominik/index.html";
