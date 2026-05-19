@@ -1,0 +1,24 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1;
+    grid-template-areas:
+    "ast info tel";
+    background-color: blue;
+}
+
+footer :first-child {
+    grid-area: ast;
+}
+
+footer :nth-child(2) {
+    grid-area: info;
+}
+
+footer :nth-child(3) {
+    grid-area: tel;
+}
+
+p {
+    text-align: center;
+}
