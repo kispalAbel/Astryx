@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A1730;
+    padding-top: 160px;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+header iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 186px;
+}
+
+.felso_teglalap {
+    background: #0D1F3F;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.szoveg_felul {
+    margin-left: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.felso_szoveg {
+    padding-top: 30px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nagy_felso {
+    margin-top: 30px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.felso_teglalap_alul {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.felso_tajekoztato {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.felso_gomb_feher {
+    margin-top: 0;
+    height: 50px;
+    width: 100px;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-left: 8%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.felso_gomb {
+    margin-top: 0;
+    height: 50px;
+    width: 160px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-left: 6%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.programs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.program-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: linear-gradient(135deg, rgba(13, 31, 63, 0.8) 0%, rgba(20, 50, 90, 0.8) 100%);
+    border: 1px solid rgba(100, 150, 255, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.program-image {
+    width: 250px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 25px;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.program-header {
+    margin-bottom: 12px;
+}
+
+.program-category {
+    color: rgba(150, 180, 255, 0.8);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.program-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.program-description {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.program-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+}
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+    background: rgba(100, 150, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: rgba(150, 180, 255, 0.8);
+}
+
+.program-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program-button {
+    height: 45px;
+    padding: 0 30px;
+    background: none;
+    border: 1.5px solid white;
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+}
+
+.program-button1 {
+    height: 45px;
+    padding: 0 30px;
+    background: white;
+    color: black;
+    border: 1.5 px solid white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+}
+
+.kartya-gomb {
+    background: #D9D9D94D;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .program-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .program-image {
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .program-title {
+        font-size: 20px;
+    }
+
+    .program-info {
+        flex-wrap: wrap;
+    }
+}
