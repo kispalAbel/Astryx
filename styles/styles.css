@@ -3,37 +3,3 @@ body {
     color: #9FB0C8;
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "cim"
-    "jegyarak"
-    "info";
-}
-
-#main-cim {
-    grid-area: "cim";
-}
-
-#main-jegyarak {
-    grid-area: "jegyarak";
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: 
-    "type price";
-}
-
-#main-jegyarak-type {
-    grid-area: "type";
-}
-
-#main-jegyarak-price {
-    grid-area: "price";
-}
-
-#main-info {
-    grid-area: "info";
-}
