@@ -240,20 +240,6 @@
 <script>
     const kartyak = document.querySelectorAll('.program-card');
 
-    // Beúszó animáció
-    const megfigyelo = new IntersectionObserver((bejegyzesek) => {
-        bejegyzesek.forEach((bejegyzes, index) => {
-            if (bejegyzes.isIntersecting) {
-                setTimeout(() => {
-                    bejegyzes.target.classList.add('beluszott');
-                }, index * 120);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    kartyak.forEach(kartya => megfigyelo.observe(kartya));
-
-    // Szűrő
     document.querySelectorAll('[data-szuro]').forEach(gomb => {
         gomb.addEventListener('click', function () {
             const szuro = this.dataset.szuro;
