@@ -1,51 +1,52 @@
 body{
     margin: 0;
     padding: 0;
-    padding-top: 160px;
 }
 
 header{
     background-color: #0D1F3F;
     border-bottom: 1px solid white;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
-.header-nav{
+.fejlec_nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 160px;
+    height: 186px;
     padding: 0px 40px 0px 40px;
     box-sizing: border-box;
 }
 
-.logo{
+.fejlec_logo{
     font-family: 'Genos', sans-serif;
     font-size: 48px;
     color: white;
     text-decoration: none;
 }
 
-.nav-links{
+.nav_linkek{
     display: flex;
     flex: 1;
     justify-content: space-around;
     padding: 0;
     margin: 0px 15px;
+    list-style: none;
 }
 
-.nav-links a{
+.nav_linkek a{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: white;
     text-decoration: none;
+    transition: text-decoration 0.2s ease;
 }
 
-.jegy-gomb{
+.nav_linkek a:hover {
+    text-decoration: underline;
+}
+
+.jegy_gomb{
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     color: white;
@@ -54,4 +55,38 @@ header{
     border-radius: 30px;
     padding: 8px 24px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jegy_gomb:hover {
+    background-color: white;
+    color: #0D1F3F;
+}
+
+@media (max-width: 768px) {
+    .fejlec_nav {
+        height: auto;
+        padding: 16px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .fejlec_logo {
+        font-size: 28px;
+    }
+
+    .nav_linkek {
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav_linkek a {
+        font-size: 14px;
+    }
+
+    .jegy_gomb {
+        font-size: 15px;
+        padding: 6px 14px;
+    }
 }
