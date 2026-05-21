@@ -20,10 +20,10 @@
             <div class="nagy_felso">Programok</div>
             <div class="felso_teglalap_alul">
                 <div class="felso_tajekoztato">Heti vetítések, tematikus előadások és távcsöves megfigyelések — <br> találd meg az utad a csillagok közé.</div>
-                <div class="felso_gomb_feher" data-szuro="mind">Mind</div>
-                <div class="felso_gomb" data-szuro="felnott">Felnőtteknek</div>
-                <div class="felso_gomb" data-szuro="gyerek">Gyerekeknek</div>
-                <div class="felso_gomb" data-szuro="megfigyeles">Megfigyelés</div>
+                <div class="felso_gomb_feher" onclick="szures('mind')">Mind</div>
+                <div class="felso_gomb" onclick="szures('felnott')">Felnőtteknek</div>
+                <div class="felso_gomb" onclick="szures('gyerek')">Gyerekeknek</div>
+                <div class="felso_gomb" onclick="szures('megfigyeles')">Megfigyelés</div>
             </div>
         </div>
 
@@ -238,20 +238,17 @@
 
 
 <script>
-    const kartyak = document.querySelectorAll('.program-card');
-
-    document.querySelectorAll('[data-szuro]').forEach(gomb => {
-        gomb.addEventListener('click', function () {
-            const szuro = this.dataset.szuro;
-            kartyak.forEach(kartya => {
-                if (szuro === 'mind' || kartya.dataset.kategoria === szuro) {
-                    kartya.style.display = 'flex';
-                } else {
-                    kartya.style.display = 'none';
-                }
-            });
-        });
-    });
+    function szures(szuro) {
+        var kartyak = document.getElementsByClassName('program-card');
+        var i;
+        for (i = 0; i < kartyak.length; i++) {
+            if (szuro == 'mind' || kartyak[i].getAttribute('data-kategoria') == szuro) {
+                kartyak[i].style.display = 'flex';
+            } else {
+                kartyak[i].style.display = 'none';
+            }
+        }
+    }
 </script>
 
 </body>
