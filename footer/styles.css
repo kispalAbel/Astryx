@@ -39,6 +39,7 @@ hr {
     width: 100%;
 }
 
-/* body {
-    background-color: #0D1F3F;
-} */
+body {
+    /* background-color: #0D1F3F; */
+    font-family: 'Inter', sans-serif;
+}

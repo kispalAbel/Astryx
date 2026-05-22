@@ -13,4 +13,10 @@ body {
 
 main {
     margin-bottom: 120px;
+    margin-top: 170px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
 }

@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Astryx</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Genos&family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
     <header>
-        <nav class="fejlec_nav">
-            <a class="fejlec_logo" href="index.html" target="_top">Astryx</a>
+        <nav class="header-nav">
+            <a class="logo" href="index.html">Astryx</a>
 
-            <ul class="nav_linkek">
-                <li><a href="programok.html" target="_top">Programok</a></li>
-                <li><a href="#" target="_top">Jegyek</a></li>
-                <li><a href="#" target="_top">Galéria</a></li>
-                <li><a href="#" target="_top">Rólunk</a></li>
-                <li><a href="#" target="_top">Kapcsolat</a></li>
+            <ul class="nav-links" id="navLinks">
+                <a href="index.html">Főoldal</a>
+                <a href="programok.html">Programok</a>
+                <a href="#">Jegyek</a>
+                <a href="#">Galéria</a>
+                <a href="#">Rólunk</a>
+                <a href="#">Kapcsolat</a>
             </ul>
 
-            <button class="jegy_gomb" onclick="top.location.href='#'">Jegyvásárlás</button>
+            <div class="nav-right">
+                <button class="jegy-gomb" type="button">Jegyvásárlás</button>
+                <button class="hamburger" id="hamburgerBtn" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navLinks = document.getElementById('navLinks');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navLinks.classList.toggle('active');
+                });
+
+                // Menü bezárása link kattintáskor
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
