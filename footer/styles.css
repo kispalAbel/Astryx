@@ -5,6 +5,11 @@ footer {
     grid-template-areas:
     "ast info tel";
     background-color: #0D1F3F;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 footer :first-child {
