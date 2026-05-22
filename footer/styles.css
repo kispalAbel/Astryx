@@ -1,0 +1,39 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1;
+    grid-template-areas:
+    "ast info tel";
+    background-color: #0D1F3F;
+}
+
+footer :first-child {
+    grid-area: ast;
+}
+
+footer :nth-child(2) {
+    grid-area: info;
+}
+
+footer :nth-child(3) {
+    grid-area: tel;
+}
+
+p {
+    text-align: center;
+    color: #F8FAFF;
+}
+
+hr {
+    height: 2px;
+    border-width: 0px;
+    border-radius: 10px;
+    /* color:#F8FAFF; */
+    background-color: #F8FAFF;
+    margin: 0.1%;
+    width: 100%;
+}
+
+/* body {
+    background-color: #0D1F3F;
+} */
