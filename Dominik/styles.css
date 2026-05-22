@@ -1,0 +1,18 @@
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 60px;
+}
+
+/* main {
+    margin-bottom: 120px;
+    margin-top: 170px;
+} */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
