@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programok</title>
+    <link href="https://fonts.googleapis.com/css2?family=Genos&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="programok.css">
+</head>
+<body>
+
+    <header>
+        <iframe src="header.html" style="width:100%; border:none;" scrolling="no"></iframe>
+    </header>
+
+    <div class="felso_teglalap">
+        <div class="szoveg_felul">
+            <div class="felso_szoveg">AKTUÁLIS ELŐADÁSOK</div>
+            <div class="nagy_felso">Programok</div>
+            <div class="felso_teglalap_alul">
+                <div class="felso_tajekoztato">Heti vetítések, tematikus előadások és távcsöves megfigyelések — <br> találd meg az utad a csillagok közé.</div>
+                <div class="felso_gomb" onclick="szures('mind')">Mind</div>
+                <div class="felso_gomb" onclick="szures('felnott')">Felnőtteknek</div>
+                <div class="felso_gomb" onclick="szures('gyerek')">Gyerekeknek</div>
+                <div class="felso_gomb" onclick="szures('megfigyeles')">Megfigyelés</div>
+            </div>
+        </div>
+
+        <div class="programs-container">
+
+            <!-- Program 1 -->
+            <div class="program-card" data-kategoria="felnott">
+                <div class="program-image">
+                    <img src="media/kep3.png" alt="A Tejút titkai - kupolaélmény">
+                </div>
+                <div class="program-content">
+                    <div class="program-header">
+                        <div class="kartya-gomb">Felnőtt</div>
+                        <div class="program-title">A Tejút titkai — interaktív kupolaélmény</div>
+                    </div>
+                    <div class="program-description">
+                        Lenyűgöző 360°-os úrutazás szakértői narrációval. Fedezd fel a csillagködök, <br> fekete lyukak és bolygók varázslatos világát.
+                    </div>
+                    <div class="program-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <span>Szombat 18:00 · 90 perc</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">👥</div>
+                            <span>· 8 éves kortól</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">·</div>
+                            <span>· 2 800 Ft / fő</span>
+                        </div>
+                    </div>
+                    <div class="program-bottom">
+                        <div></div>
+                        <button class="program-button">Tovább →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="program-card" data-kategoria="gyerek">
+                <div class="program-image">
+                    <img src="media/kep4.png" alt="Fekete lyukak rejtélye">
+                </div>
+                <div class="program-content">
+                    <div class="program-header">
+                        <div class="kartya-gomb">Gyerek</div>
+                        <div class="program-title">Fekete lyukak rejtélye</div>
+                    </div>
+                    <div class="program-description">
+                        Mi történik az eseményhorizonton túl? Modern asztrofizikai felfedezések <br> érthetően, mégis lebilincselő tálalásban.
+                    </div>
+                    <div class="program-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <span>Szombat 20:00 · 90 perc</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">👥</div>
+                            <span>· 14 éves kortól</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">·</div>
+                            <span>· 3 200 Ft / fő</span>
+                        </div>
+                    </div>
+                    <div class="program-bottom">
+                        <div></div>
+                        <button class="program-button">Tovább →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="program-card" data-kategoria="megfigyeles">
+                <div class="program-image">
+                    <img src="media/kep5.png" alt="Bolygók családja">
+                </div>
+                <div class="program-content">
+                    <div class="program-header">
+                        <div class="kartya-gomb kartya-gomb_szelesebb">MEGFIGYELÉS</div>
+                        <div class="program-title">Bolygók családja</div>
+                    </div>
+                    <div class="program-description">
+                        Interaktív foglalkozás kicsiknek a Naprendszerről. Vidám narráció, kvíz <br> és vetítés — élvezetes módon ismerkednek a bolygókkal.
+                    </div>
+                    <div class="program-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <span>Szombat 14:00 · 75 perc</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">👥</div>
+                            <span>· 6-12 éveseknek</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">·</div>
+                            <span>· 2 100 Ft / fő</span>
+                        </div>
+                    </div>
+                    <div class="program-bottom">
+                        <div></div>
+                        <button class="program-button">Tovább →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 4 -->
+            <div class="program-card" data-kategoria="megfigyeles">
+                <div class="program-image">
+                    <img src="media/kep6.png" alt="Csillagászati éjszaka">
+                </div>
+                <div class="program-content">
+                    <div class="program-header">
+                        <div class="kartya-gomb kartya-gomb_szelesebb">MEGFIGYELÉS</div>
+                        <div class="program-title">Csillagászati éjszaka</div>
+                    </div>
+                    <div class="program-description">
+                        Igazi távcsöves megfigyelés a sötét égbolt alatt. Csillagok, bolygók <br> és a Tejút közelről — szakértő vezetésével.
+                    </div>
+                    <div class="program-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <span>Szombat 21:00 · 180 perc</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">👥</div>
+                            <span>· 12 éves kortól</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">·</div>
+                            <span>· 4 500 Ft / fő</span>
+                        </div>
+                    </div>
+                    <div class="program-bottom">
+                        <div></div>
+                        <button class="program-button">Tovább →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 5 -->
+            <div class="program-card" data-kategoria="felnott">
+                <div class="program-image">
+                    <img src="media/kep8.png" alt="Galaxisok határtalan világa">
+                </div>
+                <div class="program-content">
+                    <div class="program-header">
+                        <div class="kartya-gomb">Felnőtt</div>
+                        <div class="program-title">Galaxisok határtalan világa</div>
+                    </div>
+                    <div class="program-description">
+                        Több milliárd csillag, megszámlálhatatlan galaxis. Egy esti utazás a Tejúton <br> túlra, a megfigyelhető univerzum legszélére.
+                    </div>
+                    <div class="program-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <span>Vasárnap 19:00 · 80 perc</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">👥</div>
+                            <span>· 10 éves kortól</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">·</div>
+                            <span>· 2 900 Ft / fő</span>
+                        </div>
+                    </div>
+                    <div class="program-bottom">
+                        <div></div>
+                        <button class="program-button">Tovább →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 6 -->
+            <div class="program-card" data-kategoria="csaladi">
+                <div class="program-image">
+                    <img src="media/kep9.png" alt="Holdra szállás - történelmi est">
+                </div>
+                <div class="program-content">
+                    <div class="program-header">
+                        <div class="kartya-gomb">Családi</div>
+                        <div class="program-title">Holdra szállás — történelmi est</div>
+                    </div>
+                    <div class="program-description">
+                        Az emberiség legnagyobb kalandja, eredeti felvételekkel és <br> izgalmas háttértörténetekkel családi formában.
+                    </div>
+                    <div class="program-info">
+                        <div class="info-item">
+                            <div class="info-icon">⏱</div>
+                            <span>Szombat 16:00 · 70 perc</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">👥</div>
+                            <span>· Minden korosztály</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">·</div>
+                            <span>· 2 600 Ft / fő</span>
+                        </div>
+                    </div>
+                    <div class="program-bottom">
+                        <div></div>
+                        <button class="program-button">Tovább →</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script>
+    function szures(szuro) {
+        var kartyak = document.getElementsByClassName('program-card');
+        var i;
+        for (i = 0; i < kartyak.length; i++) {
+            if (szuro == 'mind' || kartyak[i].getAttribute('data-kategoria') == szuro) {
+                kartyak[i].style.display = 'flex';
+            } else {
+                kartyak[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
