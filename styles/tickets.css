@@ -1,0 +1,61 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "cim"
+    "jegyarak";
+}
+
+main > * {
+    padding: .3%;
+}
+
+#main-cim {
+    grid-area: cim;
+    background-color: #0A1730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .3%;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+#main-jegyarak {
+    grid-area: "jegyarak";
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "type price";
+}
+
+#main-jegyarak-type {
+    grid-area: type;
+    font-size: 300%;
+}
+
+#main-jegyarak-price {
+    grid-area: price;
+    text-align: right;
+    padding-right: 5%;
+    font-size: 300%;
+}
+
+#main-jegyarak-type ul, 
+#main-jegyarak-price ul {
+    list-style-type: none;
+}
+
+/* @media screen and (max-width: 1000px) {
+    main-jegyarak {
+        grid-template-areas: 
+        "type"
+        "price";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+} */

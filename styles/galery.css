@@ -1,0 +1,73 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "cim"
+    "pics";
+}
+
+main > * {
+    padding: .3%;
+}
+
+#main-cim {
+    grid-area: cim;
+    background-color: #0A1730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .3%;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+img {
+    width: 30%;
+}
+
+#pic-six {
+    width: 80%;
+}
+
+#pic-five {
+    width: 50%;
+}
+
+#main-pics {
+    grid-area: pics;
+    display: grid;
+    grid-template-columns: 1fr 12fr 6fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "elso elso harmadik"
+    ". masodik harmadik";
+}
+
+#main-pics > * {
+    padding: 1%;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+
+#main-pics :first-child {
+    grid-area: elso;
+    justify-content: left;
+    /* padding: 0; */
+}
+
+#main-pics :nth-child(2) {
+    grid-area: masodik;
+    justify-content: left;
+    gap: 5%;
+    /* padding-left: 5%; */
+}
+
+#main-pics :nth-child(3) {
+    grid-area: harmadik;
+    justify-content: center;
+    /* padding: 0; */
+}
